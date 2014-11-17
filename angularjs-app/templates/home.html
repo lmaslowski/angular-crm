@@ -1,0 +1,16 @@
+<h3> Controller name : {{home}} </h3>
+
+<form>
+	<input type="text" ng-model="repo.name">
+	<form>
+		<span ng-repeat="user in users">
+			{{user.name}}<input checklist-model="addgroup.user" checklist-value="user" type="checkbox" />
+		</span>
+	</form>
+<button ng-click="uncheckAll()">Uncheck</button>
+
+	<pre ng-bind="addgroup | json"></pre>
+
+
+</form>
+<pre ng-bind="repo | json"></pre>

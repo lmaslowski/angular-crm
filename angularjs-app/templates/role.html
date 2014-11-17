@@ -1,0 +1,6 @@
+<label ng-repeat="role in roles">
+  <input type="checkbox" checklist-model="user.roles" checklist-value="role"> {{role.text}}
+</label>
+<pre ng-bind="user | json"></pre>
+
+<button ng-click="uncheckAll()">uncheck</button>
